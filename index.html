@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <link href="./assets/vendors/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet"> <!-- Linking CSS Stylesheet -->
+    <title>Video Party - An app to watch videos in sync with your friends</title>
 </head>
 
 <body>
@@ -35,8 +36,8 @@
             <div class="col-5">
                 <div id="whitebox">
                     <form action="/upload.php" target="myIframe" method="post" enctype="multipart/form-data" id="whiteform">
-                        <label for="fileToUpload">Select your video file:</label>
-                        <input type="file" name="fileToUpload" id="fileToUpload" aria-controls="filename">
+                        <label for="fileToUpload" id="tp1">Select your video file:</label>
+                        <input type="file" name="fileToUpload" id="fileToUpload" aria-controls="filename" aria-describedby="tp1" aria-required="true">
                         <input type="submit" value="Upload Video" name="submit" id="submitbutton">
                     </form>
                     <iframe name="myIframe" id="messagedisplay">
