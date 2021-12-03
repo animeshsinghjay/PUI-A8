@@ -1,0 +1,251 @@
+@font-face {
+	font-family: "Ubuntu";
+	src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Medium.ttf");
+    font-weight: medium;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Light.ttf");
+    font-weight: light;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Italic.ttf");
+    font-style: italic;
+}
+
+:root {
+	--background-color: #FFFFFF;
+	--border-color: black;
+	--header-height: 100px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu" , Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu" , Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(#0A111E,#222A3E);
+}
+
+a:link, a:visited {
+	color: var(--border-color);
+	text-decoration: none;
+}
+
+input {
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	border: 0px;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: auto;
+}
+
+.row {
+	height: 100px;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 1201px) {
+	.container {
+		width: 80%;
+	}
+}
+
+/* Height Tools */
+
+.ht-0 {
+	height: 0vh;
+}
+
+.ht-5 {
+	height: 5vh;
+}
+
+.ht-10 {
+	height: 10vh;
+}
+
+.ht-15 {
+	height: 15vh;
+}
+
+.ht-20 {
+	height: 20vh;
+}
+
+.ht-25 {
+	height: 25vh;
+}
+
+.ht-30 {
+	height: 30vh;
+}
+
+.ht-35 {
+	height: 35vh;
+}
+
+.ht-40 {
+	height: 40vh;
+}
+
+.ht-45 {
+	height: 45vh;
+}
+
+.ht-50 {
+	height: 50vh;
+}
+
+.ht-55 {
+	height: 55vh;
+}
+
+.ht-60 {
+	height: 60vh;
+}
+
+.ht-65 {
+	height: 65vh;
+}
+
+.ht-70 {
+	height: 70vh;
+}
+
+.ht-75 {
+	height: 75vh;
+}
+
+.ht-80 {
+	height: 80vh;
+}
+
+.ht-85 {
+	height: 85vh;
+}
+
+.ht-90 {
+	height: 90vh;
+}
+
+.ht-95 {
+	height: 95vh;
+}
+
+.ht-100 {
+	height: 100vh;
+}
+
+#logo {
+	display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#vplogoimg{
+	width: 40%;
+}
+
+#parksrecgif {
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#howitworks {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whitebox {
+	border-radius: 10px;
+	background: #FFFFFF;
+	padding: 20px;
+	height: 80vh;
+	z-index: 999;
+	position: relative;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#whiteform{
+	position: relative;
+	top: 40%;
+}
+
+#fileToUpload{
+	padding-top: 5%;
+	font-size: 18px;
+}
+
+#submitbutton{
+	margin-top: 20%;
+	height: 20%;
+	padding:5%;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #aad5e9;
+	border-radius: 10px;
+}
+
+#messagedisplay{
+	margin-top: 80%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#bluebox {
+	background: #66A9C7;
+	padding: 3px;
+	width: 100vw;
+	height: 5vh;
+	z-index: 1;
+	position: fixed;
+	left: 0;
+}
+
+#watchimg{
+	width: 30vw;
+	position: relative;
+	left: 12%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./assets/vendors/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> <!-- Linking CSS Stylesheet -->
+</head>
+
+<body>
+
+    <header> <!-- Header Container -->
+
+    </header>
+
+    <div class="container"> <!-- Body Container -->
+
+        <div class="row ht-10">&nbsp;&nbsp;&nbsp;&nbsp;</div> <!-- Row Start Empty-->
+
+        <div class="row ht-80"> <!-- Body Row -->
+            <div class="col-6">
+                <div class="row ht-20" id="logo">
+                    <img id="vplogoimg" src="./assets/images/videoparty_logo.png" alt="Video Party">
+                </div>
+                <div class="row ht-30" id="parksrecgif">
+                    <img src="./assets/images/parks.gif" alt="Gif of people in a video call">
+                    <div id="bluebox">
+                        <img id="watchimg" src="./assets/images/watch.png" alt="Watch Videos Together">
+                    </div>
+                </div>
+                <div class="row ht-30" id="howitworks">
+                    <img src="./assets/images/how_it_works.png" alt="How it Works">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+                <div id="whitebox">
+                    <form action="/upload.php" target="myIframe" method="post" enctype="multipart/form-data" id="whiteform">
+                        Select your video file:
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="submit" value="Upload Video" name="submit" id="submitbutton">
+                    </form>
+                    <iframe name="myIframe" id="messagedisplay">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ht-10">&nbsp;&nbsp;&nbsp;&nbsp;</div> <!-- Row End Empty -->
+
+    </div>
+    
+</body>
+<script src="main.js" type="text/javascript"></script> <!-- Linking JavaScript -->
+</html>
