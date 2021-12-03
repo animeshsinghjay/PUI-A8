@@ -52,28 +52,7 @@ export class AppComponent {
 
   onPlayerReady(api: VgApiService) {
     this.api = api;
-    // this.api.getDefaultMedia().subscriptions.loadedMetadata.subscribe(
-    //   this.playVideo.bind(this)
-    // );
     console.log(this.api.getDefaultMedia().subscriptions);
-
-    // this.api.getDefaultMedia().subscriptions.ended.subscribe(
-    //   this.nextVideo.bind(this)
-    // );
-
-
-    // this.api.getDefaultMedia().subscriptions.play.subscribe(
-    //   this.onPlayTriggered.bind(this)
-    // );
-
-    // this.api.getDefaultMedia().subscriptions.pause.subscribe(
-    //   this.onPauseTriggered.bind(this)
-    // );
-
-    // this.api.getDefaultMedia().subscriptions.seeking.subscribe(
-    //   this.onSeekTriggered.bind(this)
-    // );
-
     interval(100).subscribe(x => {
       this.findStatus();
     });
